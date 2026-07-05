@@ -95,9 +95,8 @@
   <text x="1400" y="316" text-anchor="middle" fill="white" font-size="10"   opacity="0.80">Acquisition &amp; Incubation</text>
 
   <!-- ══════════════════════════════════════════════════════════════ -->
-  <!--  AM SUB-TREE                                                  -->
-  <!--  Sally cx=280 y=390 | Mergel cx=720 y=430                    -->
-  <!--  3 AMs each, w=130 h=72, 15px gaps, y=620                   -->
+  <!--  AM SUB-TREE (under Mhike cx=500)                            -->
+  <!--  Sally cx=280 y=390 | Mergel cx=720 y=430                   -->
   <!-- ══════════════════════════════════════════════════════════════ -->
 
   <line x1="500" y1="327" x2="500" y2="360" stroke="#b0c4de" stroke-width="2"/>
@@ -119,8 +118,7 @@
     fill="none" stroke="#b0c4de" stroke-width="2" stroke-dasharray="6,4"/>
   <polygon points="610,466 602,462 602,470" fill="#b0c4de"/>
 
-  <!-- Sally → AMs at y=620, w=130, h=72, 15px gaps -->
-  <!-- Centers: cx=135, cx=280, cx=425 -->
+  <!-- Sally → 3 AMs at y=620, w=130, h=72, 15px gaps -->
   <line x1="280" y1="462" x2="280" y2="595" stroke="#b0c4de" stroke-width="2"/>
   <line x1="135" y1="595" x2="425" y2="595" stroke="#b0c4de" stroke-width="2"/>
   <line x1="135" y1="595" x2="135" y2="620" stroke="#b0c4de" stroke-width="2"/>
@@ -142,8 +140,7 @@
   <text x="425" y="657" text-anchor="middle" fill="#5a7089" font-size="10">Account Manager</text>
   <text x="425" y="672" text-anchor="middle" fill="#5a7089" font-size="10" opacity="0.8">Lifestyle</text>
 
-  <!-- Mergel → AMs at y=620 -->
-  <!-- Centers: cx=575, cx=720, cx=865 -->
+  <!-- Mergel → 3 AMs at y=620, w=130, h=72, 15px gaps -->
   <line x1="720" y1="502" x2="720" y2="595" stroke="#b0c4de" stroke-width="2"/>
   <line x1="575" y1="595" x2="865" y2="595" stroke="#b0c4de" stroke-width="2"/>
   <line x1="575" y1="595" x2="575" y2="620" stroke="#b0c4de" stroke-width="2"/>
@@ -166,56 +163,52 @@
   <text x="865" y="672" text-anchor="middle" fill="#5a7089" font-size="10" opacity="0.8">Home Appliances</text>
 
   <!-- ══════════════════════════════════════════════════════════════ -->
-  <!--  A&I SUB-TREE                                                 -->
-  <!--  Rafael cx=1120 y=430 | Shop Ops cx=1680 y=430 (same level)  -->
-  <!--  Rafael's managers: Jam cx=1040, Mikhaela cx=1200            -->
-  <!--  Shop Ops' managers: TBH cx=1600, TBH cx=1760                -->
-  <!--  All rank-and-file: w=140, h=72, y=620                      -->
+  <!--  A&I SUB-TREE (under Jon cx=1400)                            -->
+  <!--  Rafael + Shop Ops elevated at y=390/430 (same as Sally/Merge)-->
+  <!--  4 managers report directly to Jon at y=620                  -->
   <!-- ══════════════════════════════════════════════════════════════ -->
 
-  <!-- Jon → fork → Rafael (left) + Shop Ops (right) -->
-  <line x1="1400" y1="327" x2="1400" y2="420" stroke="#b0c4de" stroke-width="2"/>
-  <line x1="1120" y1="420" x2="1680" y2="420" stroke="#b0c4de" stroke-width="2"/>
-  <line x1="1120" y1="420" x2="1120" y2="430" stroke="#b0c4de" stroke-width="2"/>
-  <line x1="1680" y1="420" x2="1680" y2="430" stroke="#b0c4de" stroke-width="2"/>
+  <!-- Jon vertical → fork at y=360 → Rafael (left) + Shop Ops (right) -->
+  <!-- Then vertical continues down → H-bar for 4 managers at y=595 -->
+  <line x1="1400" y1="327" x2="1400" y2="595" stroke="#b0c4de" stroke-width="2"/>
 
-  <!-- Rafael — same size as Sally/Mergel (w=220, h=72) -->
-  <rect x="1010" y="430" width="220" height="72" rx="12" fill="#4DD0C0" filter="url(#shadow)"/>
-  <text x="1120" y="458" text-anchor="middle" fill="white" font-weight="700" font-size="13">Rafael Barretto</text>
-  <text x="1120" y="476" text-anchor="middle" fill="white" font-size="10.5" opacity="0.85">Sr. A&amp;I Manager</text>
+  <!-- Fork at y=360 for elevated positions -->
+  <line x1="1120" y1="360" x2="1680" y2="360" stroke="#b0c4de" stroke-width="2"/>
+  <line x1="1120" y1="360" x2="1120" y2="390" stroke="#b0c4de" stroke-width="2"/>
+  <line x1="1680" y1="360" x2="1680" y2="430" stroke="#b0c4de" stroke-width="2"/>
 
-  <!-- Shop Operations — same level, same color -->
+  <!-- Rafael — same level as Sally (y=390) -->
+  <rect x="1010" y="390" width="220" height="72" rx="12" fill="#4DD0C0" filter="url(#shadow)"/>
+  <text x="1120" y="418" text-anchor="middle" fill="white" font-weight="700" font-size="13">Rafael Barretto</text>
+  <text x="1120" y="436" text-anchor="middle" fill="white" font-size="10.5" opacity="0.85">Sr. A&amp;I Manager</text>
+
+  <!-- Shop Operations — same level as Mergel (y=430) -->
   <rect x="1570" y="430" width="220" height="72" rx="12" fill="#4DD0C0" filter="url(#shadow)"/>
-  <text x="1680" y="455" text-anchor="middle" fill="white" font-weight="700" font-size="13">[To Be Hired]</text>
+  <text x="1680" y="455" text-anchor="middle" fill="#dc2626" font-weight="700" font-size="13">[To Be Hired]</text>
   <text x="1680" y="473" text-anchor="middle" fill="white" font-size="10.5" opacity="0.85">Shop Operations</text>
 
-  <!-- Rafael's managers: Jam, Mikhaela at y=620, w=140, h=72 -->
-  <line x1="1120" y1="502" x2="1120" y2="595" stroke="#b0c4de" stroke-width="2"/>
-  <line x1="1040" y1="595" x2="1200" y2="595" stroke="#b0c4de" stroke-width="2"/>
-  <line x1="1040" y1="595" x2="1040" y2="620" stroke="#b0c4de" stroke-width="2"/>
-  <line x1="1200" y1="595" x2="1200" y2="620" stroke="#b0c4de" stroke-width="2"/>
+  <!-- 4 managers under Jon directly — H-bar at y=595 -->
+  <line x1="1070" y1="595" x2="1565" y2="595" stroke="#b0c4de" stroke-width="2"/>
+  <line x1="1070" y1="595" x2="1070" y2="620" stroke="#b0c4de" stroke-width="2"/>
+  <line x1="1235" y1="595" x2="1235" y2="620" stroke="#b0c4de" stroke-width="2"/>
+  <line x1="1400" y1="595" x2="1400" y2="620" stroke="#b0c4de" stroke-width="2"/>
+  <line x1="1565" y1="595" x2="1565" y2="620" stroke="#b0c4de" stroke-width="2"/>
 
-  <rect x="970" y="620" width="140" height="72" rx="10" fill="white" stroke="#bfd3f5" stroke-width="2" filter="url(#shadow)"/>
-  <text x="1040" y="644" text-anchor="middle" fill="#2563eb" font-weight="700" font-size="11">Jam Sarmiento</text>
-  <text x="1040" y="660" text-anchor="middle" fill="#5a7089" font-size="10">A&amp;I Manager</text>
+  <rect x="1000" y="620" width="140" height="72" rx="10" fill="white" stroke="#bfd3f5" stroke-width="2" filter="url(#shadow)"/>
+  <text x="1070" y="644" text-anchor="middle" fill="#2563eb" font-weight="700" font-size="11">Jam Sarmiento</text>
+  <text x="1070" y="660" text-anchor="middle" fill="#5a7089" font-size="10">A&amp;I Manager</text>
 
-  <rect x="1130" y="620" width="140" height="72" rx="10" fill="white" stroke="#bfd3f5" stroke-width="2" filter="url(#shadow)"/>
-  <text x="1200" y="644" text-anchor="middle" fill="#2563eb" font-weight="700" font-size="11">Mikhaela Tijamo</text>
-  <text x="1200" y="660" text-anchor="middle" fill="#5a7089" font-size="10">A&amp;I Manager</text>
+  <rect x="1165" y="620" width="140" height="72" rx="10" fill="white" stroke="#bfd3f5" stroke-width="2" filter="url(#shadow)"/>
+  <text x="1235" y="644" text-anchor="middle" fill="#2563eb" font-weight="700" font-size="11">Mikhaela Tijamo</text>
+  <text x="1235" y="660" text-anchor="middle" fill="#5a7089" font-size="10">A&amp;I Manager</text>
 
-  <!-- Shop Ops' managers: TBH #1, TBH #2 at y=620, w=140, h=72 -->
-  <line x1="1680" y1="502" x2="1680" y2="595" stroke="#b0c4de" stroke-width="2"/>
-  <line x1="1600" y1="595" x2="1760" y2="595" stroke="#b0c4de" stroke-width="2"/>
-  <line x1="1600" y1="595" x2="1600" y2="620" stroke="#b0c4de" stroke-width="2"/>
-  <line x1="1760" y1="595" x2="1760" y2="620" stroke="#b0c4de" stroke-width="2"/>
+  <rect x="1330" y="620" width="140" height="72" rx="10" fill="white" stroke="#bfd3f5" stroke-width="2" stroke-dasharray="6,3" filter="url(#shadow)"/>
+  <text x="1400" y="644" text-anchor="middle" fill="#dc2626" font-weight="700" font-size="11">[To Be Hired]</text>
+  <text x="1400" y="660" text-anchor="middle" fill="#5a7089" font-size="10">A&amp;I Manager</text>
 
-  <rect x="1530" y="620" width="140" height="72" rx="10" fill="white" stroke="#bfd3f5" stroke-width="2" stroke-dasharray="6,3" filter="url(#shadow)"/>
-  <text x="1600" y="644" text-anchor="middle" fill="#dc2626" font-weight="700" font-size="11">[To Be Hired]</text>
-  <text x="1600" y="660" text-anchor="middle" fill="#5a7089" font-size="10">A&amp;I Manager</text>
-
-  <rect x="1690" y="620" width="140" height="72" rx="10" fill="white" stroke="#bfd3f5" stroke-width="2" stroke-dasharray="6,3" filter="url(#shadow)"/>
-  <text x="1760" y="644" text-anchor="middle" fill="#dc2626" font-weight="700" font-size="11">[To Be Hired]</text>
-  <text x="1760" y="660" text-anchor="middle" fill="#5a7089" font-size="10">A&amp;I Manager</text>
+  <rect x="1495" y="620" width="140" height="72" rx="10" fill="white" stroke="#bfd3f5" stroke-width="2" stroke-dasharray="6,3" filter="url(#shadow)"/>
+  <text x="1565" y="644" text-anchor="middle" fill="#dc2626" font-weight="700" font-size="11">[To Be Hired]</text>
+  <text x="1565" y="660" text-anchor="middle" fill="#5a7089" font-size="10">A&amp;I Manager</text>
 
 </svg>
 
